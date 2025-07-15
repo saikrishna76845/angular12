@@ -59,6 +59,7 @@
 .user-avatar {
   border-radius: 50%;
   margin-right: 8px;
+  height: 40px;
 }
 
 .dropdown {

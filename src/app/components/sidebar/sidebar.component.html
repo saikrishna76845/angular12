@@ -2,7 +2,7 @@
 <div class="sidebar-container" [class.collapsed]="!sidebarOpen">
   <div class="sidebar">
     <div class="sidebar-header">
-      <h3>MyApp</h3>
+      <h3>Dashboard</h3>
       <button class="toggle-btn" (click)="toggleSidebar()">☰</button>
     </div>
 
@@ -15,7 +15,63 @@
   </div>
 
   <div class="main-content">
-    <h1>Welcome to the Dashboard</h1>
-    <p>This is your main content area.</p>
+    
+<div class="dashboard-container">
+  <!-- Summary Stats -->
+  <div class="stats-grid">
+    <div class="stat-card" *ngFor="let stat of stats">
+      <h4>{{ stat.title }}</h4>
+      <p>{{ stat.value }}</p>
+    </div>
+  </div>
+
+  <div class="dashboard-content">
+    <!-- Left: Chart and Activity -->
+    <div class="left-panel">
+      <!-- Performance Chart Placeholder -->
+      <div class="chart-box">
+        <h3>Performance Overview</h3>
+        <div class="chart-placeholder">
+          <p>[ Chart goes here ]</p>
+        </div>
+      </div>
+
+      <!-- Recent Activity -->
+      <div class="activity-box">
+        <h3>Recent Activity</h3>
+        <ul>
+          <li *ngFor="let activity of recentActivities">{{ activity }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right: Employee Table -->
+    <div class="right-panel">
+      <h3>Employee Overview</h3>
+      <table class="employee-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of employees">
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.role }}</td>
+            <td>
+              <span [class.active]="emp.status === 'Active'" 
+                    [class.leave]="emp.status === 'On Leave'">
+                {{ emp.status }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
   </div>
 </div>
