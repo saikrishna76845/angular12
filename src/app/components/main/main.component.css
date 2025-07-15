@@ -1,0 +1,121 @@
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.stat-card h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stat-card p {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+/* Content Layout */
+.dashboard-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Chart Box */
+.chart-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.chart-placeholder {
+  background-color: #e3e3e3;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+}
+
+/* Activity */
+.activity-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.activity-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.activity-box li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Right Panel: Table */
+.right-panel {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th,
+.employee-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.employee-table th {
+  background-color: #f0f0f0;
+}
+
+.employee-table span.active {
+  color: green;
+  font-weight: bold;
+}
+
+.employee-table span.leave {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-grid,
+  .dashboard-content {
+    flex-direction: column;
+  }
+}
