@@ -1,1 +1,21 @@
-<p>sidebar works!</p>
+
+<div class="sidebar-container" [class.collapsed]="!sidebarOpen">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3>MyApp</h3>
+      <button class="toggle-btn" (click)="toggleSidebar()">☰</button>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">🏠 Home</a></li>
+      <li><a href="#">📄 About</a></li>
+      <li><a href="#">📦 Services</a></li>
+      <li><a href="#">📞 Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Welcome to the Dashboard</h1>
+    <p>This is your main content area.</p>
+  </div>
+</div>
