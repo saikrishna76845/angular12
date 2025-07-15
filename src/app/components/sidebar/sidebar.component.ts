@@ -28,10 +28,10 @@ stats = [
   ];
 
   employees = [
-    { name: 'John Doe', role: 'Developer', status: 'Active' },
-    { name: 'Sarah Lee', role: 'Designer', status: 'Active' },
-    { name: 'Mike Ross', role: 'QA Tester', status: 'On Leave' },
-    { name: 'Emily Clark', role: 'Manager', status: 'Active' }
+    { name: 'Rani', role: 'Developer', status: 'Active' },
+    { name: 'Sriya', role: 'Designer', status: 'Active' },
+    { name: 'Kiran', role: 'QA Tester', status: 'On Leave' },
+    { name: 'Raghu', role: 'Manager', status: 'Active' }
   ];
 
   constructor() {}

@@ -7,11 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 const routes: Routes = [
-  {path:"", component:DashboardComponent},
-  {path:"footer", component:FooterComponent},
-  {path:"main", component:MainComponent},
-  {path:"navbar", component:NavbarComponent},
-  {path:"sidebar", component:SidebarComponent}
+  {path:"", component:DashboardComponent}
 ];
 
 @NgModule({
