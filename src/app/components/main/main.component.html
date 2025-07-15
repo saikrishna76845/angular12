@@ -1,6 +1,4 @@
-
 <div class="dashboard-container">
-  <!-- Summary Stats -->
   <div class="stats-grid">
     <div class="stat-card" *ngFor="let stat of stats">
       <h4>{{ stat.title }}</h4>
@@ -9,9 +7,7 @@
   </div>
 
   <div class="dashboard-content">
-    <!-- Left: Chart and Activity -->
     <div class="left-panel">
-      <!-- Performance Chart Placeholder -->
       <div class="chart-box">
         <h3>Performance Overview</h3>
         <div class="chart-placeholder">
@@ -19,7 +15,7 @@
         </div>
       </div>
 
-      <!-- Recent Activity -->
+
       <div class="activity-box">
         <h3>Recent Activity</h3>
         <ul>
@@ -28,7 +24,6 @@
       </div>
     </div>
 
-    <!-- Right: Employee Table -->
     <div class="right-panel">
       <h3>Employee Overview</h3>
       <table class="employee-table">
@@ -44,8 +39,7 @@
             <td>{{ emp.name }}</td>
             <td>{{ emp.role }}</td>
             <td>
-              <span [class.active]="emp.status === 'Active'" 
-                    [class.leave]="emp.status === 'On Leave'">
+              <span [class.active]="emp.status === 'Active'" [class.leave]="emp.status === 'On Leave'">
                 {{ emp.status }}
               </span>
             </td>
